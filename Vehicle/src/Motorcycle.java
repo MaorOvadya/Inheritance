@@ -4,7 +4,7 @@ private int seats;
 private int storagebox;
 
 public Motorcycle() {
-    super(0, 2, 2, 2, 25);
+    super(0, 2, 2, 2, 25,"OFF");
     this.seats = 2;
     this.storagebox = 1;
 }
@@ -32,7 +32,9 @@ public String toString() {
     + "\nWheels = " + getWheels() 
     + "\nFront Lights = " + getFrontLights() 
     + "\nBack Lights = " + getBackLights()
-    + "\nFuel Tank = " + getFuelTank();
+    + "\nFuel Tank = " + getFuelTank()
+    + "\nEngine = " + getEngine();
+
 
     }
 }

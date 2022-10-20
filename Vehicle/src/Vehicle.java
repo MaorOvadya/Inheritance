@@ -5,6 +5,7 @@ public class Vehicle {
     private int frontLights;
     private int backLights;
     private int fuelTank;
+    private String engine;
     
     public Vehicle() {
         this.doors = 4;
@@ -12,14 +13,16 @@ public class Vehicle {
         this. frontLights = 2;
         this.backLights = 2;
         this.fuelTank = 45;
+        this.engine = "OFF";
     }
     
-    public Vehicle(int doors,int wheels, int frontLights, int backLights,int fuelTank) {
+    public Vehicle(int doors,int wheels, int frontLights, int backLights,int fuelTank,String engine) {
         this.doors = doors;
         this.wheels = wheels;
         this.frontLights = frontLights;
         this.backLights = backLights;
         this.fuelTank = fuelTank;
+        this.engine = engine;
     }
     
     public int getDoors(){
@@ -62,6 +65,14 @@ public class Vehicle {
         this.fuelTank = fuelTank;
     }
     
+    public String getEngine() {
+        return engine;
+    }
+
+    public void setEngine(String engine) {
+        this.engine = engine;
+    }
+
     @Override
     public String toString() {
         return "Vehicle Details:"
@@ -69,6 +80,8 @@ public class Vehicle {
           "\nwheels = " + wheels +
            "\nfront Lights = " + frontLights + 
            "\nback Lights = " + backLights +
-           "\nFuel Tank: " + fuelTank;
+           "\nFuel Tank: " + fuelTank +
+           "\nEngine: " + engine;
     }
+
     }

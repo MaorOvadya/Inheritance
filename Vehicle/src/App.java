@@ -3,5 +3,9 @@ public class App {
             Vehicle vehicle = new Vehicle();
             System.out.println(vehicle.toString());
             vehicle.engineStart();
+            System.out.println("<==========================>");
+            Vehicle bike = new Motorcycle();
+            System.out.println(bike.toString());
+
     }
 }

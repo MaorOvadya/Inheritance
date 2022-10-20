@@ -1,3 +1,4 @@
 # Inheritance 
 
-1  - Vehicle 
+1  - Vehicle class
+2 - Motorcycle class

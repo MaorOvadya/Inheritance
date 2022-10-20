@@ -4,23 +4,22 @@ public class Vehicle {
     private int wheels;
     private int frontLights;
     private int backLights;
+    private int fuelTank;
     
     public Vehicle() {
         this.doors = 4;
         this. wheels = 4;
         this. frontLights = 2;
         this.backLights = 2;
+        this.fuelTank = 45;
     }
     
-    public Vehicle(int doors,int wheels, int frontLights, int backLights) {
+    public Vehicle(int doors,int wheels, int frontLights, int backLights,int fuelTank) {
         this.doors = doors;
         this.wheels = wheels;
         this.frontLights = frontLights;
         this.backLights = backLights;
-    }
-    
-    public void engineStart(){
-        System.out.println("Engine start....3...2...1....Vroom, vroom");
+        this.fuelTank = fuelTank;
     }
     
     public int getDoors(){
@@ -54,14 +53,22 @@ public class Vehicle {
     public void setBackLights(int backLights) {
         this.backLights = backLights;
     }
+
+    public int getFuelTank() {
+        return fuelTank;
+    }
+
+    public void setFuelTank(int fuelTank) {
+        this.fuelTank = fuelTank;
+    }
     
     @Override
     public String toString() {
         return "Vehicle Details:"
-         + " \ndoors = " + doors +
+         + "\ndoors = " + doors +
           "\nwheels = " + wheels +
-           "\nfrontLights = " + frontLights + 
-           "\nbackLights = " + backLights;
+           "\nfront Lights = " + frontLights + 
+           "\nback Lights = " + backLights +
+           "\nFuel Tank: " + fuelTank;
     }
-    
     }

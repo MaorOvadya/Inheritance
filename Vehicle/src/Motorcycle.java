@@ -1,22 +1,15 @@
 public class Motorcycle extends Vehicle {
     
-private int seats;
 private int storagebox;
 
 public Motorcycle() {
-    super(0, 2, 2, 2, 25,"OFF");
-    this.seats = 2;
+    super(2,0, 2, 2, 2, 25,"OFF");
     this.storagebox = 1;
 }
 
-public Motorcycle(int seats, int storagebox) {
+public Motorcycle(int storagebox) {
     super();
-    this.seats = seats;
     this.storagebox = storagebox;
-}
-
-public void setSeats(int seats) {
-    this.seats = seats;
 }
 
 public void setStoragebox(int storagebox) {
@@ -26,7 +19,7 @@ public void setStoragebox(int storagebox) {
 @Override
 public String toString() {
     return "Motorcycle Details: " 
-    + "\nseats = " + seats 
+    + "\nseats = " + getSeats()
     + "\nStorage Box = " + storagebox
     + "\nDoors = " + getDoors()
     + "\nWheels = " + getWheels() 

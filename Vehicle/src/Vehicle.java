@@ -6,23 +6,30 @@ public class Vehicle {
     private int backLights;
     private int fuelTank;
     private String engine;
+    private int seats;
     
     public Vehicle() {
         this.doors = 4;
         this. wheels = 4;
+        this.seats = 5;
         this. frontLights = 2;
         this.backLights = 2;
         this.fuelTank = 45;
         this.engine = "OFF";
     }
     
-    public Vehicle(int doors,int wheels, int frontLights, int backLights,int fuelTank,String engine) {
+    public Vehicle(int seats,int doors,int wheels, int frontLights, int backLights,int fuelTank,String engine) {
         this.doors = doors;
         this.wheels = wheels;
         this.frontLights = frontLights;
         this.backLights = backLights;
         this.fuelTank = fuelTank;
         this.engine = engine;
+        this.seats = seats;
+    }
+    
+    public int getSeats(){
+        return this.seats;
     }
     
     public int getDoors(){

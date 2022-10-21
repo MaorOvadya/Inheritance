@@ -5,5 +5,8 @@ public class App {
             System.out.println("<==========================>");
             Vehicle bike = new Motorcycle();
             System.out.println(bike.toString());
+            System.out.println("<==========================>");
+            Vehicle truck = new truck();
+            System.out.println(truck.toString());
     }
 }
